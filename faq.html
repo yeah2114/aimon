@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIMON</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/common.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/faq.js"></script>
+    <script src="js/common.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="left_nav">
+            <h1 class="logo"><a href="index.html"><img src="img/logo.png" alt="logo"></a></h1>
+            <div class="sub">
+                <a href="sat.html">SAT</a>
+                <a href="act.html">ACT</a>
+            </div>
+        </div>
+
+        <!-- 로그아웃 상태 -->
+        <div class="right_nav logoutVer active">
+            <a href="faq.html" class="nav_faq">FAQ</a>
+            <a href="login.html" class="nav_login">LOGIN</a>
+            <a href="register.html" class="nav_register">REGISTER</a>
+        </div>
+
+        <!-- 로그인 상태 -->
+        <div class="right_nav loginVer">
+            <a href="dashboard.html" class="nav_dash">DASHBOARD</a>
+            <a href="faq.html" class="nav_faq">FAQ</a>
+            <a href="#" class="nav_login">LOGOUT</a>
+            <div class="logout_popbg">
+                <div class="logout_pop">
+                    <p>Are you sure you want to log out?</p>
+                    <a class="logoutNo">No</a>
+                    <a class="logoutYes" href="Index.html">Yes</a>
+                </div>
+            </div>
+            <a href="setting.html" class="nav_setting">SETTING</a>
+        </div>
+    </header>
+
+    <!-- body -->
+    <section style="height: 1100px;">
+        <div class="faq">
+            <h2>FAQ</h2>
+
+            <ul class="tab">
+                <li class="active">ALL</li>
+                <li>Payment</li>
+                <li>Account and Subscription</li>
+                <li>Technical</li>
+                <li>Contact</li>
+            </ul>
+
+            <div class="tab_contents">
+                <ul class="active">
+                    <li>
+                        <p>[Payment] What form of payment is acceptable? <span></span><span></span></p>
+                        <div>
+                            - AIMON currently only accepts payment through PayPal. Click the Checkout button and log
+                            into PayPal and proceed. If you do not have a PayPal account, simply create a PayPal
+                            account, and link a payment method like your bank, credit, and/or debit cards.
+                        </div>
+                    </li>
+                    <li>
+                        <p>[Payment] How do I purchase a subscription? <span></span><span></span></p>
+                        <div>
+                            - Go to the <a href="pay.html">Purchase Membership</a> page through the button at the bottom
+                            of the Home Page or under Setting, select the test and subscription, and check out.
+                        </div>
+                    </li>
+                    <li>
+                        <p>[Payment] What is your refund policy? <span></span><span></span></p>
+                        <div>
+                            - Refunds are available for subscription of more than 30 days. Refund amounts are based on
+                            the number of days elapsed since the date of the purchase OR the number of questions used,
+                            whichever amounts to a higher deductible.
+                        </div>
+                    </li>
+                    <li>
+                        <p>[Payment] Is the provided personal information secure? <span></span><span></span></p>
+                        <div>
+                            - The security of personal information is important to AIMON. The information is securely
+                            protected and is not used in any other way, otherwise noted.
+                        </div>
+                    </li>
+                    <li>
+                        <p>[Account and Subscription] How can I reset/retrieve my username/password if I forgot them?
+                            <span></span><span></span></p>
+                        <div>
+                            - If you do not remember your password, input your email address under “Forgot password” on
+                            the Login Page. A one-time reset link will be sent to your account email.
+                        </div>
+                    </li>
+                    <li>
+                        <p>[Account and Subscription] How do I change my profile? <span></span><span></span></p>
+                        <div>
+                            - You can change/update your profile by click on <a href="set_info.html">“Manage
+                                Account”</a> under Setting on the right top corner after logging in.
+                        </div>
+                    </li>
+                    <li>
+                        <p>[Account and Subscription] When does a newly purchased Study Plan begin?
+                            <span></span><span></span></p>
+                        <div>
+                            - The plan starts right after the purchase.
+                        </div>
+                    </li>
+                    <li>
+                        <p>[Account and Subscription] How do I extend a subscription? <span></span><span></span></p>
+                        <div>
+                            - Simply purchase the same or Combo plan to extend your current plan.
+                        </div>
+                    </li>
+                    <li>
+                        <p>[Account and Subscription] Where can I input a promotion code? <span></span><span></span></p>
+                        <div>
+                            - You can use your promotion code on the Purchase <a href="pay.html">Membership Page</a>.
+                        </div>
+                    </li>
+                    <li>
+                        <p>[Technical] What are the device/OS/network requirements? <span></span><span></span></p>
+                        <div>
+                            - AIMON service is compatible with all Window and Mac computers, Android and IOS based
+                            devices. It is recommended, however, to use on devices with screen size greater than 9.7”
+                            for the ease of readability.
+                        </div>
+                    </li>
+                    <li>
+                        <p>[Technical] What do I do when I run into any technical trouble? <span></span><span></span>
+                        </p>
+                        <div>
+                            - Contact us by <a href="#">Contact Us</a> with any technical issue and we will respond as
+                            soon as possible.
+                        </div>
+                    </li>
+                    <li>
+                        <p>[Contact] How do I report an error in a question? <span></span><span></span></p>
+                        <div>
+                            - Use the Error Report button on the top right corner of each question.
+                        </div>
+                    </li>
+                    <li>
+                        <p>[Contact] Where do I contact for payment/account/system error? <span></span><span></span></p>
+                        <div>
+                            - Contact us by <a href="#">Contact Us</a> with any technical issue and we will respond as
+                            soon as possible.
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>[Payment] What form of payment is acceptable? <span></span><span></span></p>
+                        <div>
+                            - AIMON currently only accepts payment through PayPal. Click the Checkout button and log
+                            into PayPal and proceed. If you do not have a PayPal account, simply create a PayPal
+                            account, and link a payment method like your bank, credit, and/or debit cards.
+                        </div>
+                    </li>
+                    <li>
+                        <p>[Payment] How do I purchase a subscription? <span></span><span></span></p>
+                        <div>
+                            - Go to the <a href="pay.html">Purchase Membership</a> page through the button at the bottom
+                            of the Home Page or under Setting, select the test and subscription, and check out.
+                        </div>
+                    </li>
+                    <li>
+                        <p>[Payment] What is your refund policy? <span></span><span></span></p>
+                        <div>
+                            - Refunds are available for subscription of more than 30 days. Refund amounts are based on
+                            the number of days elapsed since the date of the purchase OR the number of questions used,
+                            whichever amounts to a higher deductible.
+                        </div>
+                    </li>
+                    <li>
+                        <p>[Payment] Is the provided personal information secure? <span></span><span></span></p>
+                        <div>
+                            - The security of personal information is important to AIMON. The information is securely
+                            protected and is not used in any other way, otherwise noted.
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>[Account and Subscription] How can I reset/retrieve my username/password if I forgot them?
+                            <span></span><span></span></p>
+                        <div>
+                            - If you do not remember your password, input your email address under “Forgot password” on
+                            the Login Page. A one-time reset link will be sent to your account email.
+                        </div>
+                    </li>
+                    <li>
+                        <p>[Account and Subscription] How do I change my profile? <span></span><span></span></p>
+                        <div>
+                            - You can change/update your profile by click on <a href="set_info.html">“Manage
+                                Account”</a> under Setting on the right top corner after logging in.
+                        </div>
+                    </li>
+                    <li>
+                        <p>[Account and Subscription] When does a newly purchased Study Plan begin?
+                            <span></span><span></span></p>
+                        <div>
+                            - The plan starts right after the purchase.
+                        </div>
+                    </li>
+                    <li>
+                        <p>[Account and Subscription] How do I extend a subscription? <span></span><span></span></p>
+                        <div>
+                            - Simply purchase the same or Combo plan to extend your current plan.
+                        </div>
+                    </li>
+                    <li>
+                        <p>[Account and Subscription] Where can I input a promotion code? <span></span><span></span></p>
+                        <div>
+                            - You can use your promotion code on the Purchase <a href="pay.html">Membership Page</a>.
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>[Technical] What are the device/OS/network requirements? <span></span><span></span></p>
+                        <div>
+                            - AIMON service is compatible with all Window and Mac computers, Android and IOS based
+                            devices. It is recommended, however, to use on devices with screen size greater than 9.7”
+                            for the ease of readability.
+                        </div>
+                    </li>
+                    <li>
+                        <p>[Technical] What do I do when I run into any technical trouble? <span></span><span></span>
+                        </p>
+                        <div>
+                            - Contact us by <a href="#">Contact Us</a> with any technical issue and we will respond as
+                            soon as possible.
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>[Contact] How do I report an error in a question? <span></span><span></span></p>
+                        <div>
+                            - Use the Error Report button on the top right corner of each question.
+                        </div>
+                    </li>
+                    <li>
+                        <p>[Contact] Where do I contact for payment/account/system error? <span></span><span></span></p>
+                        <div>
+                            - Contact us by <a href="#">Contact Us</a> with any technical issue and we will respond as
+                            soon as possible.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <p><img src="img/logo_w.png" alt="logoWhite"></p>
+        <p>SAT® is a registered trademark of the College Board, which are not affiliated with, and do not endorse,
+            this<br>product or site. ACT® is a registered trademark of ACT, Inc. </p>
+        <ul class="Privacy">
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="terms.html">Privacy Policy</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

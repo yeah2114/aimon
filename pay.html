@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIMON</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/common.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/pay.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="left_nav">
+            <h1 class="logo"><a href="index.html"><img src="img/logo.png" alt="logo"></a></h1>
+            <div class="sub">
+                <a href="sat.html">SAT</a>
+                <a href="act.html">ACT</a>
+            </div>
+        </div>
+
+        <!-- 로그아웃 상태 -->
+        <div class="right_nav logoutVer active">
+            <a href="faq.html" class="nav_faq">FAQ</a>
+            <a href="login.html" class="nav_login">LOGIN</a>
+            <a href="register.html" class="nav_register">REGISTER</a>
+        </div>
+
+        <!-- 로그인 상태 -->
+        <div class="right_nav loginVer">
+            <a href="dashboard.html" class="nav_dash">DASHBOARD</a>
+            <a href="faq.html" class="nav_faq">FAQ</a>
+            <a href="#" class="nav_login">LOGOUT</a>
+            <div class="logout_popbg">
+                <div class="logout_pop">
+                    <p>Are you sure you want to log out?</p>
+                    <a class="logoutNo">No</a>
+                    <a class="logoutYes" href="Index.html">Yes</a>
+                </div>
+            </div>
+            <a href="setting.html" class="nav_setting">SETTING</a>
+        </div>
+    </header>
+
+    <!-- body -->
+    <section>
+        <div class="pay">
+            <h2>Purchase Membership</h2>
+
+            <div class="pay_top">
+                    <ul class="pay_tab">
+                        <li class="active">Combo</li>
+                        <li>SAT</li>
+                        <li>ACT</li>    
+                    </ul>
+
+                <div class="pay_contents">
+                    <ul class="active">
+                        <li >
+                            <p>Combo / 30day</p>
+                            <p><strong>29</strong></p>
+                            <span>2100+ practice question</span>
+                            <span>Performance tracking</span>
+                        </li>
+                        <li class="active">
+                            <p>Combo / 60day</p>
+                            <p><strong>33</strong></p>
+                            <span>2100+ practice question</span>
+                            <span>Performance tracking</span>
+                        </li>
+                        <li>
+                            <p>Combo / 90day</p>
+                            <p><strong>49</strong></p>
+                            <span>2100+ practice question</span>
+                            <span>Performance tracking</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <p>SAT / 30day</p>
+                            <p><strong>29</strong></p>
+                            <span>2100+ practice question</span>
+                            <span>Performance tracking</span>
+                        </li>
+                        <li>
+                            <p>SAT / 60day</p>
+                            <p><strong>33</strong></p>
+                            <span>2100+ practice question</span>
+                            <span>Performance tracking</span>
+                        </li>
+                        <li>
+                            <p>SAT / 90day</p>
+                            <p><strong>49</strong></p>
+                            <span>2100+ practice question</span>
+                            <span>Performance tracking</span>0
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <p>ACT / 30day</p>
+                            <p><strong>29</strong></p>
+                            <span>2100+ practice question</span>
+                            <span>Performance tracking</span>
+                        </li>
+                        <li>
+                            <p>ACT / 60day</p>
+                            <p><strong>33</strong></p>
+                            <span>2100+ practice question</span>
+                            <span>Performance tracking</span>
+                        </li>
+                        <li>
+                            <p>ACT / 90day</p>
+                            <p><strong>49</strong></p>
+                            <span>2100+ practice question</span>
+                            <span>Performance tracking</span>0
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="or">
+                    <h2>OR</h2>
+                </div>
+    
+                <div class="pay_promotion">
+                    <form>
+                        <div class="pay_promotion_form">
+                            <input type="text" name="pay_promotion" placeholder="Enter your promotion Code">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>          
+            </div>
+            
+            <div class="pay_bottom">
+                <div class="pay_summary">
+                    <h3>Summary</h3>
+                    <ul>
+                        <li>
+                            <p>Membership for</p>
+                            <p>0.00</p>
+                        </li>
+                        <li>
+                            <p>Tax</p>
+                            <p>0.00</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <p>Subtotal</p>
+                            <p>0.00</p>
+                        </li>
+                    </ul>
+                    <button>Checkout</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <p><img src="img/logo_w.png" alt="logoWhite"></p>
+        <p>SAT® is a registered trademark of the College Board, which are not affiliated with, and do not endorse,
+            this<br>product or site. ACT® is a registered trademark of ACT, Inc. </p>
+        <ul class="Privacy">
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="terms.html">Privacy Policy</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

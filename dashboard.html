@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIMON</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/common.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.0/chart.min.js"
+        integrity="sha512-asxKqQghC1oBShyhiBwA+YgotaSYKxGP1rcSYTDrB0U6DxwlJjU59B67U8+5/++uFjcuVM8Hh5cokLjZlhm3Vg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/lnb.js"></script>
+
+
+    
+		<!-- 	풀캘린더	 -->
+		<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.3.2/main.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.3.2/main.min.css"/>
+        <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="left_nav">
+            <h1 class="logo"><a href="index.html"><img src="img/logo.png" alt="logo"></a></h1>
+            <div class="dash_sub">
+                <div class="ani"></div>
+                <a href="dashboard.html" class="active">SAT</a>
+                <a href="dashboard_act.html">ACT</a>
+            </div>
+        </div>
+        </div>
+
+        <!-- 로그아웃 상태 -->
+        <div class="right_nav logoutVer active">
+            <a href="faq.html" class="nav_faq">FAQ</a>
+            <a href="login.html" class="nav_login">LOGIN</a>
+            <a href="register.html" class="nav_register">REGISTER</a>
+        </div>
+
+        <!-- 로그인 상태 -->
+        <div class="right_nav loginVer">
+            <a href="dashboard.html" class="nav_dash">DASHBOARD</a>
+            <a href="faq.html" class="nav_faq">FAQ</a>
+            <a href="#" class="nav_login">LOGOUT</a>
+            <div class="logout_popbg">
+                <div class="logout_pop">
+                    <p>Are you sure you want to log out?</p>
+                    <a class="logoutNo">No</a>
+                    <a class="logoutYes" href="Index.html">Yes</a>
+                </div>
+            </div>
+            <a href="setting.html" class="nav_setting">SETTING</a>
+        </div>
+
+        <div class="lnb">
+            <ul>
+                <li class="">
+                    <a href="dashboard.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                            height="24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                                d="M13 21V11h8v10h-8zM3 13V3h8v10H3zm6-2V5H5v6h4zM3 21v-6h8v6H3zm2-2h4v-2H5v2zm10 0h4v-6h-4v6zM13 3h8v6h-8V3zm2 2v2h4V5h-4z" />
+                        </svg>Dashboard</a>
+                </li>
+                <li>
+                    <a href="lab_sat.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                                d="M13 21v2h-2v-2H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h6a3.99 3.99 0 0 1 3 1.354A3.99 3.99 0 0 1 15 3h6a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1h-8zm7-2V5h-5a2 2 0 0 0-2 2v12h7zm-9 0V7a2 2 0 0 0-2-2H4v14h7z" />
+                        </svg>Lab
+                    </a>
+                    <ul class="sat active">
+                        <li>
+                            <a href="lab_sat_reading.html">Reading</a>
+                        </li>
+                        <li>
+                            <a href="#">Writing and Language</a>
+                        </li>
+                        <li>
+                            <a href="#">Math</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="review_sat_reading.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                                d="M21 2.992v18.016a1 1 0 0 1-.993.992H3.993A.993.993 0 0 1 3 21.008V2.992A1 1 0 0 1 3.993 2h16.014c.548 0 .993.444.993.992zM19 4H5v16h14V4zm-7.707 9.121l4.243-4.242 1.414 1.414-5.657 5.657-3.89-3.89 1.415-1.414 2.475 2.475z" />
+                        </svg>Test Review
+                    </a>
+                    <ul class="sat active">
+                        <li>
+                            <a href="review_sat_reading.html">Reading</a>
+                        </li>
+                        <li>
+                            <a href="#">Writing and Language</a>
+                        </li>
+                        <li>
+                            <a href="#">Math</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="concept.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                                d="M13 8v8a3 3 0 0 1-3 3H7.83a3.001 3.001 0 1 1 0-2H10a1 1 0 0 0 1-1V8a3 3 0 0 1 3-3h3V2l5 4-5 4V7h-3a1 1 0 0 0-1 1zM5 19a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                        </svg>Concept Review
+                    </a>
+                    <ul class="sat active">
+                        <li>
+                            <a href="concept.html">Reading</a>
+                        </li>
+                        <li>
+                            <a href="#">Writing and Language</a>
+                        </li>
+                        <li>
+                            <a href="#">Math</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="tips.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                                d="M14 22.5L11.2 19H6a1 1 0 0 1-1-1V7.103a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1V18a1 1 0 0 1-1 1h-5.2L14 22.5zm1.839-5.5H21V8.103H7V17H12.161L14 19.298 15.839 17zM2 2h17v2H3v11H1V3a1 1 0 0 1 1-1z" />
+                        </svg>Tips and Q&A
+                    </a>
+                    <ul class="sat active">
+                        <li>
+                            <a href="tips.html">Reading</a>
+                        </li>
+                        <li>
+                            <a href="#">Writing and Language</a>
+                        </li>
+                        <li>
+                            <a href="#">Math</a>
+                        </li>
+                        <li>
+                            <a href="#">Others</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- body -->
+    <section>
+        <div class="dashboard">
+            <!-- sat -->
+            <div class="sat">
+
+                <!-- score_summary -->
+                <div class="score_summary">
+                    <h2>Score Summary</h2>
+                    <div class="con">
+                        <!-- left -->
+                        <div class="left score_left">
+                            <h3>Total Estimated Score</h3>
+                            <ul>
+                                <li class="total_score">
+                                    <div>
+                                        <!-- ajax연결 -->
+                                        <p>10</p>
+                                        <p>
+                                            <img src="img/up_score.png" alt="">30
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h4>Reading</h4>
+                                    <div>
+                                        <!-- ajax연결 -->
+                                        <p>0</p>
+                                        <p>
+                                            <img src="img/up_score.png" alt=""> 100
+                                        </p>
+                                    </div>
+                                    <a href="reading.html">Begin Practice</a>
+                                </li>
+                                <li>
+                                    <h4>Writing</h4>
+                                    <div>
+                                        <!-- ajax연결 -->
+                                        <p>12</p>
+                                        <p>
+                                            <img src="img/down_score.png" alt=""> 40
+                                        </p>
+                                    </div>
+                                    <a href="#">Begin Practice</a>
+                                </li>
+                                <li>
+                                    <h4>Math</h4>
+                                    <div>
+                                        <!-- ajax 연결 -->
+                                        <p>720</p>
+                                        <p>
+                                            <img src="img/score_icon.png" alt=""> 0
+                                        </p>
+                                    </div>
+                                    <a href="math.html">Begin Practice</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- right -->
+                        <div class="right">
+                            <div class="scoreSelect">
+                                <select name="" id="">
+                                    <option value="total">Total</option>
+                                    <option value="reading">Reading</option>
+                                    <option value="writing">Writing</option>
+                                    <option value="math">Math</option>
+                                </select>
+                            </div>
+                            <div class="scoreBar">
+                                <span>400</span>
+                                <div class="scoreBarBg">
+                                    <span class="avg">Avg</span>
+                                    <span class="comp">Comp</span>
+                                    <span class="target">Target</span>
+                                    <div class="scoreBarMove"></div>
+                                </div>
+                                <span>1600</span>
+                            </div>
+                            <canvas id="canvas" width="600" height="200"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    var canvas = document.querySelector('#canvas');
+                    var ctx = canvas.getContext('2d');
+
+                    var barChar = new Chart(canvas, {
+                        type: "bar",
+                        data: {
+                            labels: ["Sun", "Mon", "Tue", "wed", "Thu", "Fri", "Sat"],
+                            datasets: [{
+                                label: 'Score',
+                                data: [500, 600, 400, 1100, 900, 800, 500],
+                                backgroundColor: [
+                                    '#2393fd',
+                                    '#2393fd',
+                                    '#2393fd',
+                                    '#2393fd',
+                                    '#1571c7',
+                                ]
+                            }]
+                        },
+                        options: {
+                            plugins: {
+                                legend: {
+                                    display: false
+                                }
+                            }
+                        }
+                    })
+                </script>
+
+                <!-- section analysis -->
+                <div class="section_analysis">
+                    <h2>Section Analysis</h2>
+                    <div class="con">
+                        <div class="total">
+                            <p>Total</p>
+                            <canvas id="canvas2" width="300" height="250"></canvas>
+                        </div>
+                        <div class="reading">
+                            <p>Reading</p>
+                            <canvas id="canvas3" width="250" height="250"></canvas>
+                        </div>
+                        <div class="writing">
+                            <p>Writing</p>
+                            <canvas id="canvas4" width="250" height="250"></canvas>
+                        </div>
+                        <div class="math">
+                            <p>Math</p>
+                            <canvas id="canvas5" width="250" height="250"></canvas>
+                        </div>
+
+                        <ul>
+                            <li>
+                                <span></span>Current score
+                            </li>
+                            <li><span></span>Competitor</li>
+                        </ul>
+                    </div>
+
+                    <script>
+                        var canvas2 = document.querySelector('#canvas2');
+                        var ctx2 = canvas.getContext('2d');
+                        var canvas3 = document.querySelector('#canvas3');
+                        var ctx3 = canvas.getContext('2d');
+                        var canvas4 = document.querySelector('#canvas4');
+                        var ctx4 = canvas.getContext('2d');
+                        var canvas5 = document.querySelector('#canvas5');
+                        var ctx5 = canvas.getContext('2d');
+
+                        var barChar2 = new Chart(canvas2, {
+                            type: "radar",
+                            data: {
+                                labels: ["READING", "MATH", "WRITING"],
+                                datasets: [{
+                                    label: 'Current score',
+                                    data: [33.3, 33.3, 33.3],
+                                    pointBackgroundColor: "rgba(0,0,0,0)",
+                                    pointBorderColor:"rgba(0,0,0,0)",
+                                    borderColor: "#2393fd",
+                                },
+                                {
+                                    label: 'Target',
+                                    data: [0, 1, 2],
+                                    pointBackgroundColor: "rgba(0,0,0,0)",
+                                    pointBorderColor:"rgba(0,0,0,0)",
+                                    borderColor: "#00c85d"
+                                }]
+                            },
+                            options: {
+                                plugins: {
+                                    legend: {
+                                        display: false
+                                    }
+                                }
+                            }
+                        })
+
+                        var barChar3 = new Chart(canvas3, {
+                            type: "radar",
+                            data: {
+                                labels: ["Information", "Infographics", "Synthesis", "Ideas"],
+                                datasets: [{
+                                    label: 'Current score',
+                                    data: [1, 2, 1, 4],
+                                    pointBackgroundColor: "rgba(0,0,0,0)",
+                                    pointBorderColor:"rgba(0,0,0,0)",
+                                    borderColor: "#2393fd",
+                                },
+                                {
+                                    label: 'Target',
+                                    data: [0, 1, 2, 2],
+                                    pointBackgroundColor: "rgba(0,0,0,0)",
+                                    pointBorderColor:"rgba(0,0,0,0)",
+                                    borderColor: "#00c85d"
+                                }]
+                            },
+                            options: {
+                                plugins: {
+                                    legend: {
+                                        display: false
+                                    }
+                                }
+                            }
+                        })
+
+                        var barChar4 = new Chart(canvas4, {
+                            type: "radar",
+                            data: {
+                                labels: ["development", "Organization", "Effective Langauge Use", "sentence Structure", "Convention of Usage", "conventions ofPunctuation"],
+                                datasets: [{
+                                    label: 'Current score',
+                                    data: [1, 2, 1, 4, 6, 1],
+                                    pointBackgroundColor: "rgba(0,0,0,0)",
+                                    pointBorderColor:"rgba(0,0,0,0)",
+                                    borderColor: "#2393fd",
+                                },
+                                {
+                                    label: 'Target',
+                                    data: [0, 1, 2, 2, 7, 1],
+                                    pointBackgroundColor: "rgba(0,0,0,0)",
+                                    pointBorderColor:"rgba(0,0,0,0)",
+                                    borderColor: "#00c85d"
+                                }]
+                            },
+                            options: {
+                                plugins: {
+                                    legend: {
+                                        display: false
+                                    }
+                                }
+                            }
+                        })
+
+                        var barChar5 = new Chart(canvas5, {
+                            type: "radar",
+                            data: {
+                                labels: ["Heart of Algebra", "Problem Solving and Data Analysis", "Passport to Advanced Math", "Infographics"],
+                                datasets: [{
+                                    label: 'Current score',
+                                    data: [1, 2, 1, 4],
+                                    pointBackgroundColor: "rgba(0,0,0,0)",
+                                    pointBorderColor:"rgba(0,0,0,0)",
+                                    borderColor: "#2393fd",
+                                },
+                                {
+                                    label: 'Target',
+                                    data: [0, 1, 2, 2],
+                                    pointBackgroundColor: "rgba(0,0,0,0)",
+                                    pointBorderColor:"rgba(0,0,0,0)",
+                                    borderColor: "#00c85d"
+                                }]
+                            },
+                            options: {
+                                plugins: {
+                                    legend: {
+                                        display: false
+                                    }
+                                }
+                            }
+                        })
+                    </script>
+
+
+                </div>
+
+                <!-- Time per Question -->
+                <div class="time">
+                    <h2>Time per Question</h2>
+                    <div class="con">
+                        <!-- left -->
+                        <div class="left time_left">
+                            <div class="questions">
+                                <h4>Reading</h4>
+                                <div>
+                                    <p>1m 20s</p>
+                                    <span>/questions</span>
+                                </div>
+                            </div>
+                            <div class="questions">
+                                <h4>Writing</h4>
+                                <div>
+                                    <p>20s</p>
+                                    <span>/questions</span>
+                                </div>
+                            </div>
+                            <div class="questions">
+                                <h4>Math</h4>
+                                <div>
+                                    <p>4m 20s</p>
+                                    <span>/questions</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- right -->
+                        <div class="right time_right">
+                            <h5>
+                                Estimated Time Per Question
+                            </h5>
+                            <div>
+                                <!-- ajax연결 -->
+                                <p>+1m 20s</p>
+                                <div class="bar">
+                                    <div class="circle"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <!-- ajax 연결 -->
+                                <p>-1m 04s</p>
+                                <div class="bar">
+                                    <div class="circle"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <!-- ajax연결 -->
+                                <p>+13m 20s</p>
+                                <div class="bar">
+                                    <div class="circle"></div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    
+                    
+                    </div>
+                </div>
+
+                <!-- study management -->
+                <div class="study">
+                    <h2>Study Management</h2>
+                    <div class="con">
+                        <!-- left -->
+                        <div class="left time_left">
+                            <div class="questions">
+                                <h4>Parctive Time</h4>
+                                <div>
+                                    <p>1m 20s</p>
+                                </div>
+                            </div>
+                            <div class="questions">
+                                <h4>Practiced Questions</h4>
+                                <div>
+                                    <p>42</p>
+                                    <span>questions</span>
+                                </div>
+                            </div>
+                            <div class="questions">
+                                <h4>Reviewed Concepts</h4>
+                                <div>
+                                    <p>2</p>
+                                    <span>concepts</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- right -->
+                        <div class="right right_c">
+                            <div id="calendar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                /* Full Calendar */
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+			fixedWeekCount: false,
+			initialView: 'dayGridMonth',
+			headerToolbar: {
+				left: '',
+				center: 'prev title next',
+				right: ''
+			  },
+			titleFormat: { // will produce something like "Tuesday, September 18, 2018"
+				month: 'short',
+				year: 'numeric'
+			  },
+			height: "100%",
+			contentHeight: "100%",
+			aspectRatio: 6,
+			events: [
+			{ 
+			classNames:'attendance',
+			 title: '1', 
+			  start: '2021-09-01',
+              overlap:false,
+              display:'background',
+              backgroundColor: "#2393fd"
+			}
+		  ]
+		});
+            calendar.render();
+
+                $(function(){
+                    $('.fc-day-today').parent('tr').css({'background-color':'#F8F9FB'});
+
+ $('.fc .fc-button-primary').click(function(){
+  $('.fc-day-today').parent('tr').css({'background-color':'#F8F9FB'});
+  var width  = $(window).width();
+  if (width > 1350){
+   $('.fc-daygrid-event.attendance').parent('div').parent('div').siblings('div').children('a').css({'width':'25px','height':'25px','background-color':'#3BC3FF','color':'#fff','border-radius':'50%','padding':'3px 0'});
+  }else{
+   $('.fc-daygrid-event.attendance').parent('div').parent('div').siblings('div').children('a').css({'width':'20px','height':'20px','background-color':'#3BC3FF','color':'#fff','border-radius':'50%','padding':'3px 0'});
+  }
+ });
+                })
+            </script>
+
+            <!-- control -->
+            <div class="control">
+                <div class="link">
+                    <h2>SAT</h2>
+                    <div class="toggle">
+                        <span></span><span></span>
+                    </div>
+                    <div class="start">
+                        <ul>
+                            <li><span>Reading</span> <a href="reading.html">Begin Practice</a></li>
+                            <li><span>Writing</span> <a href="#">Begin Practice</a></li>
+                            <li><span>Math</span> <a href="math.html">Begin Practice</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="top">
+                    Top
+                </div>
+            </div>
+    </section>
+
+</body>
+
+</html>

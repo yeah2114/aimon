@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIMON</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/common.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/common.js"></script>
+</head>
+
+<body style="background:#f1f1f1">
+    <!-- header -->
+    <header>
+        <div class="left_nav">
+            <h1 class="logo"><a href="index.html"><img src="img/logo.png" alt="logo"></a></h1>
+            <div class="sub">
+                <a href="sat.html">SAT</a>
+                <a href="act.html">ACT</a>
+            </div>
+        </div>
+
+        <!-- 로그아웃 상태 -->
+        <div class="right_nav logoutVer active">
+            <a href="faq.html" class="nav_faq">FAQ</a>
+            <a href="login.html" class="nav_login">LOGIN</a>
+            <a href="register.html" class="nav_register">REGISTER</a>
+        </div>
+
+        <!-- 로그인 상태 -->
+        <div class="right_nav loginVer">
+            <a href="dashboard.html" class="nav_dash">DASHBOARD</a>
+            <a href="faq.html" class="nav_faq">FAQ</a>
+            <a href="#" class="nav_login">LOGOUT</a>
+            <div class="logout_popbg">
+                <div class="logout_pop">
+                    <p>Are you sure you want to log out?</p>
+                    <a class="logoutNo">No</a>
+                    <a class="logoutYes" href="Index.html">Yes</a>
+                </div>
+            </div>
+            <a href="setting.html" class="nav_setting">SETTING</a>
+        </div>
+    </header>
+
+    <!-- body -->
+    <section>
+        <div class="login_bg">
+            <!-- login input -->
+            <div class="login">
+                <h2><img src="img/logo.png" alt="logo"></h2>
+                <form action="">
+                    <ul class="login_form">
+                        <li>
+                            <input type="text" name="email" placeholder="Email" required>
+                        </li>
+                        <li>
+                            <input class="pw" type="password" name="pw" placeholder="Password" required>
+                            <button class="pw_view">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="none" d="M0 0h24v24H0z" />
+                                    <path
+                                        d="M12 3c5.392 0 9.878 3.88 10.819 9-.94 5.12-5.427 9-10.819 9-5.392 0-9.878-3.88-10.819-9C2.121 6.88 6.608 3 12 3zm0 16a9.005 9.005 0 0 0 8.777-7 9.005 9.005 0 0 0-17.554 0A9.005 9.005 0 0 0 12 19zm0-2.5a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9zm0-2a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
+                                </svg>
+                            </button>
+                        </li>
+                        <li>
+                            <input class="submit_btn" type="submit" value="LOGIN">
+                        </li>
+                    </ul>
+                </form>
+
+                <!-- forgot pw -->
+                <div class="forgot_pw">
+                    <a>Forgot password?</a>
+                    <!-- 클릭 시 display block -->
+                    <div class="pop_bg">
+                        <div class="email_pop">
+                            Verification email has been sent to <span>ajax연결</span>. Click the button in the
+                            email and sign up.
+
+                            <ul>
+                                <li class="email_close">No</li>
+                                <li class="email_check">Yes</li>
+                            </ul>
+                            Can't find the email? Check your spam folder or
+                            <span class="remail"> resend verification email.</span>
+                        </div>
+
+                        <div class="pw_popup">
+                            <div class="close">
+                                <p>Write your registered email.</p>
+                                <img src="img/icon_close.png" alt="close">
+                            </div>
+                            <form action="">
+                                <ul>
+                                    <li><input type="email" placeholder="Email" name="email"></li>
+                                    <li><input type="submit" value="Send"></li>
+                                </ul>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- sns login -->
+                <div class="sns_login">
+                    <p><img src="img/icon_google.png" alt="googleSns">Sign in with Google</p>
+                    <p><img src="img/icon_facebook.png" alt="facebookSns">Sign in with facebook</p>
+                    <p><img src="img/icon_twitter.png" alt="twitterSns">Sign in with Twitter</p>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <p><img src="img/logo_w.png" alt="logoWhite"></p>
+        <p>SAT® is a registered trademark of the College Board, which are not affiliated with, and do not endorse,
+            this<br>product or site. ACT® is a registered trademark of ACT, Inc. </p>
+        <ul class="Privacy">
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="terms.html">Privacy Policy</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

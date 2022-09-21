@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <style>
+        .popup_bg{
+            background: rgba(0,0,0,0.5);
+            width:100%; height: 100%;
+
+            position: fixed;
+            top:0; left:0;
+        }
+
+        .resume_popup{
+            background: #fff;
+            padding:30px;
+            width:500px;
+            text-align: center;
+
+            position: absolute;
+            top:50%; left:50%;
+            transform: translate(-50%,-50%);
+        }
+        .resume_popup p{
+            font-size: 16px;
+        }
+        .resume_popup p button{
+            background:#ededed;
+            border:none;
+            width:150px;
+            padding:10px 5px;
+            color:#333;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+        .resume_popup p button:nth-of-type(2){
+            background:#2393fd;
+            color:#fff;
+        }
+    </style>
+    
+    <div class="popup_bg resume_popup_bg">
+        <div class="resume_popup">
+            <p>Would you like to resume where you left off?</p>
+            <p>
+                <button class="popup_close">No</button>
+                <button>Yes</button>
+        </p>
+        </div>
+    </div>
+
+    <script>
+        $('.popup_close').on('click',function(){
+            $('.resume_popup_bg').css('display','none');
+            $('.resume_popup').css('display','none')
+        });
+    </script>
+</body>
+</html>
